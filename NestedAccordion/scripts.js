@@ -1,31 +1,16 @@
-//just a tracer...
-//alert("It's alive!");
+//TO OPEN THE ACCORDING
+//What event should I listen for? 'click'
+//What element should listen for that event? '.cbp-nttrigger'
+//_.forEach(document.querySlectorAll('.cbp-nttrigger'), function(element){
 
-document.head.parentElement.className = "js";
+//  element.addEventListener('click'), function(){
 
-var elements = document.querySelectorAll('h3');
-
-//elements[0].addEventListener("click", function(){
-//	elements[0].parentElement.classList.toggle('cbp-ntopen');
-//	});
-//li.classList.toggle('cbp-ntopen');
-
-
+//    element.parentElement.classList.toggle('cbp-ntopen');
+//  }
+//}
+//})
 
 
-
-_.forEach(elements, function(element, index, elements){
-    element.addEventListener('click', function(){
-        console.log(elements, index, element);
-        element.parentElement.classList.toggle('cbp-ntopen');
-    });
-});
-
-var details = document.querySelectorAll("h4");
-
-_.forEach(details, function(detail, index, details){
-    detail.addEventListener('click', function(){
-        console.log(details, index, detail);
-        detail.parentElement.classList.toggle('cbp-ntopen');
-    });
+$('.cbp-nttrigger').on('click', function(event){
+  $(event.target).parent().toggleClass('cbp-ntopen');
 });
