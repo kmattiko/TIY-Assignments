@@ -39,3 +39,34 @@ h5 {
 .cbp-ntopen > .cbp-ntcontent {
 	display: block;
 }
+
+ul > cbp-ntopen {
+
+}
+
+ul {
+	list-style-image: url('https://thenounproject.com/term/carrot/145762/');
+	list-style-position: inside;
+}
+
+li {
+	list-style-type: none;
+}
+
+h3.cbp-nttrigger::before {
+	content: "-";
+	padding-right: 0.5em;
+}
+
+.cbp-ntopen > cbp-nttrigger::before{
+	content: "|";
+}
+
+.cbp-nttrigger {
+	/* this is the smallest element that I can add the hover command to*/
+	cursor: pointer;
+}
+
+.cbp-nttrigger:hover::before {
+	color: pink; /*makes the hover event pint*/
+}
