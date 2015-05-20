@@ -1,0 +1,27 @@
+/*
+tabs exist in horizontal setup, they are padded
+tab active is blue, the rest are grey
+there is a line under the tabs, except active tab
+tabs are bulleted
+tabs hover and color changes for inactive tabs
+cute tab pictures
+border is full length of page
+break point- removes text from tab and moves everything in list style.
+active tab has no bottom border/thickened top line,
+font is all wrong
+tabs are centered, menu items are pulled sides wider
+title and text are lined up under the image
+3up side by side layout
+skitch? tool for
+
+*/
+
+body {
+	color: cornflowerblue;
+	font-family: sans-serif;
+}
+
+.class {
+	border: 1px solid blue;
+	box-sizing: border-box;
+}

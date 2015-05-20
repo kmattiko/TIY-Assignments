@@ -1,0 +1,35 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #1870C4;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.clearfix {
+  padding-bottom: 40px;
+}
+
+.bp-icon, .cbp-vm-icon {
+  float: right;
+  padding-right: 20px;
+}
+
+.cbp-vm-icon {
+  border: 3px solid #1870C4;
+}
+
+.main {
+  border: 3px solid #1870C4;
+  padding-top: 40px;
+}
+
+.cbp-vm-options {
+  border-bottom: 3px solid #1870C4;
+}
+
+.cbp-vm-price {
+  color: darkgrey;
+  font-weight: bold;
+}

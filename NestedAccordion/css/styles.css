@@ -1,0 +1,41 @@
+/*
+Needs color, size, font updated in the h3, h4
+Arrows need to be grey and then turn blue when hovered :: before
+Giant underline, only on h3 headdings
+h4s are capitalized
+h5 are grey color with the rest of text - arrows stay grey
+Bullets vs the arrow button
+Format to move paragraph even to the button- relative position
+Font-Family- ours is Serif (hanging tabs) and needs to be changed Sans- Serif (without hanging)
+It defaults to Times New Roman
+*/
+body {
+	color: darkgrey;
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	display: block;
+	border-bottom: 1pt solid lightgrey;
+	font-size: 35pt;
+}
+
+h4 {
+	font-size: 20pt;
+}
+
+h3, h4 {
+	color: cornflowerblue;
+}
+
+h5 {
+	color: darkgrey;
+}
+
+.js .cbp-ntcontent {
+	display: none;
+}
+
+.cbp-ntopen > .cbp-ntcontent {
+	display: block;
+}
