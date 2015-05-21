@@ -1,20 +1,15 @@
-/**
- * cbpFWTabs.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-( function( window ) {
+(function(window){
+	var BASE_URL = 'http://lorempixel.com/350/200';
 
-	'use strict';
+	function rando(limit){
+		return Math.floor(Math.random() *limit
+	)};
 
+//alert(Math.floor(Math.random() *1000));
 
+function randoImage(){
+	return BASE_URL + "?" + rando(1000);
+}
 
-	// add to global namespace
-	window.CBPFWTabs = CBPFWTabs;
-
-})( window );
+ $('img').attr('src', randoImage);
+})(window);
