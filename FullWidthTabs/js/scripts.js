@@ -4,7 +4,6 @@
 	function rando(limit){
 		return Math.floor(Math.random() *limit
 	)};
-
 //alert(Math.floor(Math.random() *1000));
 
 function randoImage(){

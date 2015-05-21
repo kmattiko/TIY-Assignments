@@ -32,16 +32,17 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-
 /*.mediabox img {
 	width: 100%;
 }*/
+.content section[id^="section-"] {
+
+}
 
 .content section[id^="section-"].content-current {
 	display: block;
 }
 
-.content section[id^="section-"]
 
 .content section[id^="section-"]::before {
 	content: " ";
