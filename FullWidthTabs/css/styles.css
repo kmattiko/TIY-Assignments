@@ -12,16 +12,79 @@ font is all wrong
 tabs are centered, menu items are pulled sides wider
 title and text are lined up under the image
 3up side by side layout
-skitch? tool for
-
+skitch? tool for planning and outlines
+Boxes for:
+	Giant Wrapper box around everything (body tag? div.container? div.tabs#tabs?)
+			as it gets smaller this is where the breaking point is
+	Tab box (#tabs > nav? or #tabs > nav > ul?)
+	Pannel box (div.content)
+			three boxes inside with (3 columns) (section[id^="section-"])
+				one column - each are identical set of image, heading, text (div.mediabox)
+					space inbetween column does not change, must be it's own box
+						image is the full width of column, at the top (<img>)
+								image is set to column size (shrinks- relative to size of wrapper), text does not shrink
+									(relative to view port) Headings <h3> and images are placeholders
+									 text is left aligned <p>
 */
 
 body {
 	color: cornflowerblue;
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 }
 
-.class {
-	border: 1px solid blue;
+nav ul li {
+  display: inline-block;
+}
+
+ul {
+	border-bottom: 2px solid lightgrey;
+}
+
+nav {
+	text-align: center
+}
+
+li {
+	border: 2px solid lightgrey;
+	font-size: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+
+a {
+	color: lightgrey;
+	text-decoration: none;
+}
+/*.mediabox img {
+	width: 100%;
+}*/
+.content section[id^="section-"] {
+
+}
+
+.content section[id^="section-"].content-current {
+	display: block;
+}
+
+
+.content section[id^="section-"]::before {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.mediabox {
+	width: 33%;
+	float: left;
+	padding-right: 1em;
+	padding-left: 1em;
 	box-sizing: border-box;
+}
+
+
+.mediabox img {
+	width: 100%;
 }
