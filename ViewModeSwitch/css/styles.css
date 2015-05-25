@@ -13,16 +13,26 @@ body {
 
 .bp-icon, .cbp-vm-icon {
   float: right;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .cbp-vm-icon {
-  border: 3px solid #1870C4;
+  border: 1px solid navy;
+  background-color: lightblue;
+  padding: 6px 10px 6px 10px;
+  margin: 6px 10px 6px 10px;
+  text-align: center;
+  float: inherit;
+}
+
+a {
+  color: navy;
+  text-decoration: none;
 }
 
 .main {
   border: 3px solid #1870C4;
-  padding-top: 40px;
+  padding: 20px 0 20px 0;
 }
 
 .cbp-vm-options {
