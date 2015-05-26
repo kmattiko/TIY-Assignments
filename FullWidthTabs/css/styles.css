@@ -33,18 +33,53 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.tabs nav ul li {
+#tabs nav ul li {
   display: inline-block;
 	border: 2px solid lightgrey;
+	border-bottom: none;
+	box-sizing: border-box;
 	font-size: 30px;
-	/*line height*/
-	padding: 10px 10px 10px 10px;
+	margin: auto .15em;
+	padding: 10px 20px 20px 20px;
+	margin: 0 5px 0 5px;
+	text-align: center;
 }
 
+#tabs nav ul li.tab-current {
+	border-color: navy;
+	border-bottom-color: white;
+	border-top-width: 3px;
+}
 
-/*.mediabox img {
-	width: 100%;
-}*/
+#tabs nav {
+	text-align: center
+}
+
+a.icon-shop::before {
+	content: "\1f374";
+	padding-right: 7px;
+}
+
+a.icon-cup::before {
+	content: "\1f376";
+	padding-right: 7px;
+}
+
+a.icon-food::before {
+	content: "\1f363";
+	padding-right: 7px;
+}
+
+a.icon-lab::before {
+	content: "\1f359";
+	padding-right: 7px;
+}
+
+a.icon-truck::before {
+	content: "\1f371";
+	padding-right: 7px;
+}
+
 .content section[id^="section-"] {
  display: none;
  padding-left: 1em;
@@ -60,11 +95,8 @@ body {
  clear: both;
 }
 
-
 .tabs nav {
 	border-bottom: 2px solid lightgrey;
-	margin-bottom: none;
-	padding-bottom: none;
 }
 
 nav {
@@ -75,11 +107,6 @@ a {
 	color: lightgrey;
 	text-decoration: none;
 }
-.tab-current {
-	color: magenta;
-	border-bottom: none;
-	font-size: 30px;
-}
 
 .mediabox {
 	width: 33%;
@@ -89,15 +116,19 @@ a {
 	box-sizing: border-box;
 }
 
-
 .mediabox img {
 	width: 100%;
 }
 
-#tabs li {
-	display
+@media screen and (max-width: 800px) {
+	.tabs nav ul li a > span {
+		display: none;
+	}
 }
 
-#tabs li .tab-current {
-	diplay: block
+@media screen and (max-width: 500px) {
+	.tabs nav ul li {
+		margin: 0;
+		width: 20;
+	}
 }
