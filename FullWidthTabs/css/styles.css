@@ -26,54 +26,58 @@ Boxes for:
 									(relative to view port) Headings <h3> and images are placeholders
 									 text is left aligned <p>
 */
+/*	border-top: 2px solid lightgrey;*/
 
 body {
 	color: cornflowerblue;
 	font-family: Arial, sans-serif;
 }
 
-nav ul li {
+.tabs nav ul li {
   display: inline-block;
+	border: 2px solid lightgrey;
+	font-size: 30px;
+	padding: 10px 10px 10px 10px;
 }
 
-ul {
+
+/*.mediabox img {
+	width: 100%;
+}*/
+.content section[id^="section-"] {
+ display: none;
+ padding-left: 1em;
+ padding-right: 1em;
+ padding-top: 70px;
+}
+.content section[id^="section-"].content-current {
+ display: block;
+}
+.content section[id^="section-"]::after {
+ content: " ";
+ display: table;
+ clear: both;
+}
+
+
+.tabs nav {
 	border-bottom: 2px solid lightgrey;
+	margin-bottom: none;
+	padding-bottom: none;
 }
 
 nav {
 	text-align: center
 }
 
-li {
-	border: 2px solid lightgrey;
-	font-size: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: auto;
-}
-
 a {
 	color: lightgrey;
 	text-decoration: none;
 }
-/*.mediabox img {
-	width: 100%;
-}*/
-.content section[id^="section-"] {
-
-}
-
-.content section[id^="section-"].content-current {
-	display: block;
-}
-
-
-.content section[id^="section-"]::before {
-	content: " ";
-	display: table;
-	clear: both;
+.tab-current {
+	color: magenta;
+	border-bottom: none;
+	font-size: 30px;
 }
 
 .mediabox {
@@ -87,4 +91,12 @@ a {
 
 .mediabox img {
 	width: 100%;
+}
+
+#tabs li {
+	display
+}
+
+#tabs li .tab-current {
+	diplay: block
 }
