@@ -1,4 +1,4 @@
-$(function(window){
+/*$(function(window){
 
 
   $('a.icon-shop').click(function() {
@@ -33,6 +33,24 @@ $(function(window){
   })
 
 
+})(window);*/
+
+
+
+$(function() {
+  $('#tabs li').on('click', function(event) {
+
+    $(this).siblings().removeClass('tab-current');
+    $(this).addClass('tab-current');
+
+    var panelId = $(this).children('a').attr('href');
+    var $panel = $(panelId);
+
+    $panel.addClass('content-current')
+      .siblings().removeClass('content-current');
+
+  });
+});
 
 
 /*  $('.tabs li').on('click', function(){
@@ -50,5 +68,3 @@ $(function(window){
 });
 
 */
-
-})(window);
