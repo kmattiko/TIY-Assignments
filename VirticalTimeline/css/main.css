@@ -95,8 +95,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.timeline time {
+  float: left; width: 38%;
+  display: inline-block;
+  text-decoration-color: cornflowerblue;
+}
+
+.timeline time > * {
+  display: block;
+  font-size: 35px;
+}
+
+.timeline li::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.timeline {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+.timeline article {
+  color: white;
+  background-color: skyblue;
+  font-family: sans-serif;
+  padding: 2.5em 1.5em 2.5em 1.5em;
+  display: inline-block;
+  width: 62%; box-sizing: border-box;
+  float: right;
+  margin-right: 7em;
+  border: 2px solid skyblue;
+  border-radius: 10px / 10px ;
+}
+
+h3 {
+  font-size: 18pt;
+  border-bottom: 1px solid lightblue;
+}
+
+p {
+  font-size: 13pt;
+}
 
 
+.timeline :nth-child(odd) article {
+  background-color: cornflowerblue;
+}
+
+.timeline li {
+  padding-bottom: 2ex;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '\2703';
+  position: absolute;
+  left: 50%;
+  font-size: 200%;
+}
 
 
 
