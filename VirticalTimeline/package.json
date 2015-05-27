@@ -7,14 +7,15 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --directory --files='index.html,css/*.css'"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kmattiko/TIY-Assignments"
   },
   "author": "",
-  "license": "ISC",
+  "license": "CC0",
   "bugs": {
     "url": "https://github.com/kmattiko/TIY-Assignments/issues"
   },
