@@ -11,19 +11,24 @@ body {
   padding-bottom: 40px;
 }
 
-.bp-icon, .cbp-vm-icon {
-  float: right;
-  padding-right: 10px;
+.bp-icon {
+  display: inherit;
 }
 
 .cbp-vm-icon {
+  display: inherit;
   border: 1px solid navy;
   background-color: lightblue;
   padding: 6px 10px 6px 10px;
   margin: 6px 10px 6px 10px;
-  text-align: center;
-  float: inherit;
 }
+
+.cbp-vm-switcher li {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
 
 a {
   color: navy;
@@ -37,6 +42,7 @@ a {
 
 .cbp-vm-options {
   border-bottom: 3px solid #1870C4;
+  display: block;
 }
 
 .cbp-vm-price {

@@ -95,93 +95,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.timeline time {
-  float: left; width: 38%;
+body {
+  background-color: #19A3D1;
+}
+
+.cbp-mc-column {
   display: inline-block;
-  text-decoration-color: cornflowerblue;
-}
-
-.timeline time > * {
-  display: block;
-  font-size: 35px;
-}
-
-.timeline li::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.timeline {
-  margin: 0; padding: 0;
-  list-style: none;
-}
-
-.timeline article {
-  color: white;
-  background-color: skyblue;
-  font-family: sans-serif;
-  padding: 2.5em 1.5em 2.5em 1.5em;
-  display: block;
-  width: 62%; box-sizing: border-box;
-  float: right;
-  margin-right: 7em;
-  border: 2px solid skyblue;
-  border-radius: 10px / 10px ;
-}
-
-.timeline h3 {
-  font-size: 18pt;
-  border-bottom: 1px solid lightblue;
-}
-
-.timeline p {
-  font-size: 13pt;
-  position: relative;
-}
-
-
-.timeline :nth-child(odd) article {
-  background-color: cornflowerblue;
-}
-
-.timeline li {
-  padding-bottom: 2ex;
-  position: relative;
-}
-
-.timeline li::before {
-  content: '\2702';
-  position: absolute;
-  left: 19%;
-  font-size: 200%;
-  background-color: cornflowerblue;
-  line-height: 3ex; width: 3ex;
+  width: 33%;
+  display: inherit;
   text-align: center;
-  border-radius: 50%;
-  border: 1ex solid lightblue;
+  padding-top: 45px;
+  padding-left: 25px;
+  font-size: 20px;
 }
 
-.timeline time::after {
-  content: ' ';
-  position: absolute;
-  left: 21.5%;
-  width: 2ex;
-  background-color: lightblue;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+input, select {
+  background-color: #19A3D1;
 }
 
-.timeline li article::before {
-  content: '\25c0';
-  position: absolute;
-  display: block;
-  color: lightblue;
-  font-size: 50px;
-
+input, select, label {
+  display: inherit;
+  margin-top: 80px;
+  padding-left: 10px;
 }
-
 
 
 
