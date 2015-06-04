@@ -7,34 +7,74 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+     <div class="container">
+      <form class="form">
+       <div class="columns">
+        <div class="column-1">
+         <label for="full_name">Full Name</label>
+         <input type="text" name="full_name" placeholder="Sally Sea Shores">
+         <label for="preferred_name">Preferred Name</label>
+         <input type="text" name="preferred_name" placeholder="Sal">
+         <label for="email">Email Address</label>
+         <input type="text" name="email" placeholder="Sally@SeaShore.com">
+         <label for="country">Country</label>
+         <select name="country">
+           <option>Choose a Country</option>
+           <option>Czech Republic</option>
+           <option>Japan</option>
+           <option>Denmark</option>
+           <option>Canada</option>
+         </select>
+        </div>
+        <div class="column-2">
+         <lable for="eye_color">Eye Color</label>
+         <input type="text" name="eye-color" placeholder="Sky Blue Pink">
+         <label for="occupation">Occupation</label>
+         <select name="occupation">
+           <option>Choose an Occupation</option>
+           <option>Zoo Keeper</option>
+           <option>Barista</option>
+           <option>Train Driver</option>
+           <option>Unicorn</option>
+         </select>
+         <label for="car">Car</label>
+         <input type="text" name="car" placeholder="1994 Geo Prism">
+         <label for="favorite_food">Favorite Food</label>
+         <input type="text" name="favorite_food" placeholder="Rutabega">
+        <div class="column-3">
+         <label for="pet">Pet</label>
+         <input type="text" name="pet" placeholder="Penguin">
+         <label for="tv_show">TV Show</label>
+         <input type="text" name="tv_show" placeholder="Animorphs">
+         <label for="accent">Favorite Accent</label>
+         <select name="accent">
+           <option>Pick your favorite</option>
+           <option>French</option>
+           <option>Southern American</option>
+           <option>German</option>
+           <option>New England</option>
+           <option>Scottish</option>
+        </select>
+        <label for="superpower">Your SuperPower</label>
+        <input type="text" name="superpower">
+        </div>
+        <div class="submit">
+        </div>
+       </div>
+      </div>
+     </div>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+
     </body>
 </html>
