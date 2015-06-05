@@ -108,13 +108,20 @@ li {
   border: 2px solid grey;
 }
 
-.content {
-  border-top: 2px solid darkgrey;
-  display: inline-block;
-  width: 33%;
+.content section[id^="section-"]{
+  display: block;
+  width: 30%;
 }
 
+.content::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
+h3, p {
+  width: 30%
+}
 
 
 
