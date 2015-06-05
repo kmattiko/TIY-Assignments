@@ -108,6 +108,11 @@ li {
   border: 2px solid grey;
 }
 
+.content {
+  border-top: 2px solid darkgrey;
+  display: inline-block;
+  width: 33%;
+}
 
 
 
